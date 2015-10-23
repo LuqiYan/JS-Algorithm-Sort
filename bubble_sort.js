@@ -2,10 +2,12 @@
 /* bubble sort */
 function bubble_sort(arr){
     var i, temp;
+    var j = 0;
     var swapped = true;
     while(swapped){
         swapped = false;
-        for(i = 0; i < arr.length; i++){
+        j++;
+        for(i = 0; i < arr.length - j; i++){
             if(arr[i] > arr[i+1]){
                 temp = arr[i];
                 arr[i] = arr[i + 1];
